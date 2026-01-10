@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><addons><addon id="plugin.video.mediahub" version="0.7.9" name="Media Hub" provider-name="JT">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><addons><addon id="plugin.video.mediahub" version="0.7.10" name="Media Hub" provider-name="JT">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
     </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">Media Hub Video Plugin</summary>
         <description lang="en" />
